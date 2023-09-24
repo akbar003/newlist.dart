@@ -1,0 +1,64 @@
+list: 
+index print(exe=[1]);
+in list only declare date will print i.e in index.
+if we only assign a one data type in list we write like List<String> we put there only string value
+          List <string> exe=["akbar","anni"];
+
+if assign any value in list in spesific index and replace previous value the method will be
+   exe=[0]="khan";
+it change the value on index 0 and add "khan".
+
+in any case you print second last element on list the code will be,
+   print(exe=exe.lenght -2);
+it will print second last element in list.
+
+when replace any element in list the code will be,
+exe.replace(start,end,[replace value]);
+exe.replace(1,3,["atif","tabeer"]);
+it replace with index 1 to 3.
+
+replace any value with last the code is
+exe.replacerange(exe.length -2,exe.length -1,["abc","def"]);
+it will replace second last element and add two new value.
+
+
+write in assending order code.
+exe.sort();
+
+code for decending .
+exe.sort((a,b) => bcompareTo(a));
+print(exe);
+now it convert to decendiing order.
+
+code to reversed value inlist'
+var exe = (exe.reversed);
+print (exe);
+now it's value reversed but it convert to itreable we need it rereverse to list it's code wiil be.
+
+var exe=List.of(exe.reversed);
+print(exe);
+it again convert to list now you can put list methods on it.
+
+
+if add any value.
+exe.add(["akk"]);
+exe.addall(["akl","akc"]);
+
+if insert any new value in list 
+exe.insert(2,"akbar");
+print(exe);
+it insert akbar at index 2 but the old elements of list will be same only push the second index value to 3rd index
+
+to remove any value on list
+exe.remove("akbar");
+exe.removeat(1);
+
+removewhere
+List exe = [1,2,3,4,5,6,7,5,1];
+exe.removewhere((e) => e>5);
+print(exe);
+
+output:
+[1,2,3,4,5,5,1]
+
+
